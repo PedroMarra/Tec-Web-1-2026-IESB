@@ -1,12 +1,100 @@
 <!doctype html>
 <html lang="pt-BR">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aluno Online</title>
+	
+	<style>
+		body{
+		margin:0;
+		}
+		
+		.layout{
+		display:flex;
+		height:100vh;
+		}
+		
+		#navigation{
+		width:25%;
+		border:1px solid gray;
+		}
+		
+		.content{
+		flex:1;
+		}
+		
+		#header_css{
+		height:80px;
+		border:1px solid gray;
+		}
+		
+		main{
+		border:1px solid gray;
+		height:100%;
+		margin:25px;
+		}
+		
+		.ul_formater { font-size: 20px; border: 1px solid gray; margin: 25px; }
+		.h_formater { border: 1px solid gray; margin: 25px; }
+		
+	</style>
+	
   </head>
+  
   <body>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<div class="layout">
+
+  <nav id="navigation">
+    <h1 class="h_formater">Aluno Online</h1>
+    <ul class="ul_formater">
+      <li><a href="#dashboard"> Dashboard </a></li><br>
+	  <li><a href="#notas"> Notas </a></li><br>
+	  <li><a href="#faltas"> Faltas </a></li><br>
+	  <li><a href="#boletos"> Boletos </a></li><br>
+	  <li><a href="#requerimentos"> Requerimentos </a></li><br>
+	  <li><a href="#sair"> Sair </a></li><br>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <header id="header_css">
+      <h1 class="h_formater">Olá, Aluno!</h1>
+    </header>
+
+    <main>
+      <h1 style="margin:25px;">Bem vindo ao portal do aluno!</h1>
+	  <h2 class="h_formater"><strong>Mural de Avisos</strong>
+		<ul>
+			<li> Inscrição para o projeto de extensão </li>
+			<li> Eleição para representante de turma </li>
+		</ul>
+	  <h2>
+
+	  <h2 class="h_formater"><strong>Calendário Acadêmico</strong>
+		<ul>
+			<li> 23/02 - Início do período letivo 2026-1 </li>
+			<li> 25/04 - Prazo final para aplicação da P1 </li>
+			<li> 23/06 - Prazo final para aplicação da P2 </li>
+			<li> 04/07 - Fim do período letivo 2026-1 </li>
+		</ul>
+	  <h2>
+
+	  <h2 class="h_formater"><strong>Minhas Disciplinas</strong>
+		<ul>
+			<li> Bancos de Dados I (HMDC253) </li>
+			<li> Estrutura de Dados (MDC127) </li>
+			<li> Tecnologias Web (HMDC251) </li>
+		</ul>
+	  <h2>
+    </main>
+  </div>
+
+</div>
+
+</body>
+  
 </html>
