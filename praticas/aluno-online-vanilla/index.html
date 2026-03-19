@@ -1,62 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aluno Online - Dashboard</title>
+  </head>
+  <body>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aluno Online</title>
-</head>
-
-<body>
-
-  <div>
-
-    <nav>
-      <h1>Aluno Online</h1>
-      <ul>
-        <li><a href="#dashboard"> Dashboard </a></li><br>
-        <li><a href="#notas"> Notas </a></li><br>
-        <li><a href="#faltas"> Faltas </a></li><br>
-        <li><a href="#boletos"> Boletos </a></li><br>
-        <li><a href="#requerimentos"> Requerimentos </a></li><br>
-        <li><a href="#sair"> Sair </a></li><br>
-      </ul>
-    </nav>
-
-    <div>
+    <aside id="sidebar">
       <header>
+        <h2>Aluno Online</h2>
+      </header>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Notas</a></li>
+          <li><a href="#">Faltas</a></li>
+          <li><a href="#">Boletos</a></li>
+          <li><a href="#">Requerimentos</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="main-content">
+      
+      <header id="topbar">
         <h1>Olá, Aluno!</h1>
       </header>
 
-      <main>
-        <h1>Bem vindo ao portal do aluno!</h1>
-        
-        <h2><strong>Mural de Avisos</strong></h2>
-        <ul>
-          <li> Inscrição para o projeto de extensão </li>
-          <li> Eleição para representante de turma </li>
-        </ul>
+      <section id="dashboard-content">
+        <h2>Bem-vindo ao portal do aluno</h2>
 
-        <h2><strong>Calendário Acadêmico</strong></h2>
-        <ul>
-          <li> 23/02 - Início do período letivo 2026-1 </li>
-          <li> 25/04 - Prazo final para aplicação da P1 </li>
-          <li> 23/06 - Prazo final para aplicação da P2 </li>
-          <li> 04/07 - Fim do período letivo 2026-1 </li>
-        </ul>
+        <article id="mural-avisos">
+          <h3>Mural de Avisos</h3>
+          <ul>
+            <li>Inscrição para o projeto de extensão</li>
+            <li>Eleição para representante de turma</li>
+          </ul>
+        </article>
 
-        <h2><strong>Minhas Disciplinas</strong></h2>
-        <ul>
-          <li> Bancos de Dados I (HMDC253) </li>
-          <li> Estrutura de Dados (MDC127) </li>
-          <li> Tecnologias Web (HMDC251) </li>
-        </ul>
-      </main>
-    </div>
+        <article id="calendario-academico">
+          <h3>Calendário Acadêmico</h3>
+          <ul>
+            <li>23/02 - Início do período letivo 2026-1</li>
+            <li>25/04 - Prazo final para aplicação da P1</li>
+            <li>23/06 - Prazo final para aplicação da P2</li>
+            <li>04/07 - Fim do período letivo 2026-1</li>
+          </ul>
+        </article>
 
-  </div>
+        <section id="minhas-disciplinas">
+          <h3>Minhas Disciplinas</h3>
+          <ul>
+            <li>Bancos de Dados I (HMDC253)</li>
+            <li>Estrutura de Dados (MDC127)</li>
+            <li>Tecnologias Web (HMDC251)</li>
+          </ul>
+        </section>
+      </section>
 
-</body>
+    </main>
 
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
