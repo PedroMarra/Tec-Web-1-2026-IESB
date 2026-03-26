@@ -5,11 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aluno Online - Dashboard</title>
+    
+    <link rel="stylesheet" href="./style.css"> 
   </head>
   <body>
 
     <aside id="sidebar">
-      <header>
+      <header id="sidebar-header">
+        <img src="/learn.svg" alt="Logo" width="30">
         <h2>Aluno Online</h2>
       </header>
       
@@ -29,41 +32,54 @@
       
       <header id="topbar">
         <h1>Olá, Aluno!</h1>
+        <img src="/avatar.svg" alt="Avatar" width="40">
       </header>
 
       <section id="dashboard-content">
         <h2>Bem-vindo ao portal do aluno</h2>
 
-        <article id="mural-avisos">
-          <h3>Mural de Avisos</h3>
-          <ul>
-            <li>Inscrição para o projeto de extensão</li>
-            <li>Eleição para representante de turma</li>
-          </ul>
+        <article class="card">
+          <div class="card-header">
+            <h3>Mural de Avisos</h3>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Inscrição para o projeto de extensão</li>
+              <li>Eleição para representante de turma</li>
+            </ul>
+          </div>
         </article>
 
-        <article id="calendario-academico">
-          <h3>Calendário Acadêmico</h3>
-          <ul>
-            <li>23/02 - Início do período letivo 2026-1</li>
-            <li>25/04 - Prazo final para aplicação da P1</li>
-            <li>23/06 - Prazo final para aplicação da P2</li>
-            <li>04/07 - Fim do período letivo 2026-1</li>
-          </ul>
+        <article class="card">
+          <div class="card-header">
+            <h3>Calendário Acadêmico</h3>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>23/02 - Início do período letivo 2026-1</li>
+              <li>25/04 - Prazo final para aplicação da P1</li>
+              <li>23/06 - Prazo final para aplicação da P2</li>
+              <li>04/07 - Fim do período letivo 2026-1</li>
+            </ul>
+          </div>
         </article>
 
-        <section id="minhas-disciplinas">
-          <h3>Minhas Disciplinas</h3>
-          <ul>
-            <li>Bancos de Dados I (HMDC253)</li>
-            <li>Estrutura de Dados (MDC127)</li>
-            <li>Tecnologias Web (HMDC251)</li>
-          </ul>
+        <section class="card">
+          <div class="card-header">
+            <h3>Minhas Disciplinas</h3>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Bancos de Dados I (HMDC253)</li>
+              <li>Estrutura de Dados (MDC127)</li>
+              <li>Tecnologias Web (HMDC251)</li>
+            </ul>
+          </div>
         </section>
       </section>
 
     </main>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
